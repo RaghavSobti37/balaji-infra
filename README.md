@@ -4,7 +4,7 @@ Corporate website for **BALAJI INFRA** — a civil infrastructure contractor ser
 
 ## Live Site
 
-Deployed on Vercel. See repository deployments for the latest production URL.
+**Production:** [https://balaji-infra.vercel.app](https://balaji-infra.vercel.app)
 
 ## Pages
 
