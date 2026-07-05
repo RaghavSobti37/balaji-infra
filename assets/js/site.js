@@ -2,7 +2,9 @@
   const NAV_ITEMS = [
     { id: "home", label: "Home", href: "index.html" },
     { id: "about", label: "About", href: "about.html" },
+    { id: "services", label: "Services", href: "services.html" },
     { id: "projects", label: "Projects", href: "projects.html" },
+    { id: "contact", label: "Contact", href: "contact.html" },
   ];
 
   function navLinkClass(active, isActive) {
@@ -59,8 +61,11 @@
         Infrastructure firm specializing in heavy civil engineering and road construction across challenging terrains.
       </p>
       <div class="flex gap-4">
-        <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors rounded-lg" href="mailto:inquiries@balajiinfra.com" aria-label="Email">
+        <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors rounded-lg" href="mailto:Kishorbhamare319@gmail.com" aria-label="Email">
           <span class="material-symbols-outlined text-sm">mail</span>
+        </a>
+        <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors rounded-lg" href="tel:+919420593051" aria-label="Phone">
+          <span class="material-symbols-outlined text-sm">phone</span>
         </a>
       </div>
     </div>
@@ -69,14 +74,17 @@
       <ul class="space-y-3">
         <li><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a></li>
         <li><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a></li>
+        <li><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="services.html">Services</a></li>
         <li><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Projects</a></li>
+        <li><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
       <h4 class="text-label-md font-label-md text-primary uppercase mb-6">Head Office</h4>
       <p class="text-body-md text-on-surface-variant mb-4">
         Nashik, Maharashtra, India 422001<br/>
-        Email: inquiries@balajiinfra.com
+        Email: Kishorbhamare319@gmail.com<br/>
+        Phone: +91 9420593051
       </p>
       <div class="p-4 bg-surface-container-low border border-outline-variant flex items-center gap-4 rounded-lg">
         <span class="material-symbols-outlined text-primary">location_on</span>

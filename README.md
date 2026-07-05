@@ -60,9 +60,9 @@ Then open [http://localhost:8080](http://localhost:8080).
 ## Contact
 
 - **Head Office:** Nashik, Maharashtra, India 422001
-- **Email:** inquiries@balajiinfra.com
-- **Phone:** +91 (253) 000-0000
+- **Email:** Kishorbhamare319@gmail.com
+- **Phone:** +91 9420593051
 
 ## License
 
-© 2024 BALAJI INFRA. All Rights Reserved.
+© 2026 Kishor Bhamare. All Rights Reserved.
