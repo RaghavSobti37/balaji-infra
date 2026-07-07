@@ -176,6 +176,75 @@
     });
   }
 
+  function initTabs() {
+    const tabContainer = document.getElementById("project-tabs");
+    if (!tabContainer) return;
+
+    const buttons = tabContainer.querySelectorAll("button[role='tab']");
+    const panes = document.querySelectorAll(".tab-pane");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("aria-controls");
+
+        // Update buttons styling
+        buttons.forEach((b) => {
+          b.setAttribute("aria-selected", "false");
+          b.classList.remove("border-primary", "text-primary");
+          b.classList.add("border-transparent", "text-on-surface-variant");
+        });
+        btn.setAttribute("aria-selected", "true");
+        btn.classList.add("border-primary", "text-primary");
+        btn.classList.remove("border-transparent", "text-on-surface-variant");
+
+        // Show target pane, hide others
+        panes.forEach((pane) => {
+          if (pane.id === targetId) {
+            pane.classList.remove("hidden");
+            // Auto reveal elements inside the newly shown tab
+            const reveals = pane.querySelectorAll("[data-reveal]");
+            reveals.forEach((el) => {
+              el.classList.add("opacity-100", "translate-y-0");
+              el.classList.remove("opacity-0", "translate-y-8");
+            });
+          } else {
+            pane.classList.add("hidden");
+          }
+        });
+      });
+    });
+  }
+
+  function initImageSwappers() {
+    // Find all image swapper cards
+    document.querySelectorAll("[data-image-swapper]").forEach((swapper) => {
+      const img = swapper.querySelector("[data-swappable-image]");
+      const buttons = swapper.querySelectorAll("[data-swap-to]");
+      if (!img || !buttons) return;
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const targetState = btn.dataset.swapTo; // "before" or "after" (or "wip" if applicable)
+          const newSrc = swapper.dataset[targetState + "Src"];
+          if (newSrc) {
+            img.src = newSrc;
+          }
+
+          // Update buttons state
+          buttons.forEach((b) => {
+            if (b === btn) {
+              b.classList.remove("bg-surface", "text-on-surface-variant", "border-outline-variant");
+              b.classList.add("bg-accent", "text-accent-foreground", "border-accent", "font-bold");
+            } else {
+              b.classList.add("bg-surface", "text-on-surface-variant", "border-outline-variant");
+              b.classList.remove("bg-accent", "text-accent-foreground", "border-accent", "font-bold");
+            }
+          });
+        });
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const activePage = document.body.dataset.page || "home";
     const navSlot = document.getElementById("site-nav");
@@ -196,5 +265,7 @@
 
     initForms();
     initReveal();
+    initTabs();
+    initImageSwappers();
   });
 })();
