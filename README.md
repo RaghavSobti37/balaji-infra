@@ -1,68 +1,83 @@
-# BALAJI INFRA
+<h1 align="center">Balaji Infra</h1>
 
-Corporate website for **BALAJI INFRA** — a civil infrastructure contractor serving government ministries and private developers across challenging terrains.
+<p align="center">
+  Corporate website for Balaji Infra, a civil infrastructure contractor, with service pages and lead-focused presentation.
+</p>
 
-## Live Site
+<p align="center">
+  <img src="https://img.shields.io/badge/visibility-public-brightgreen" alt="Public repository" />
+  <img src="https://img.shields.io/badge/maintained-yes-blue" alt="Maintained" />
+  <img src="https://img.shields.io/badge/owner-RaghavSobti37-111827" alt="Owner" />
+</p>
+<p align="center">
+  <a href="https://balaji-infra.vercel.app"><strong>Live Project</strong></a>
+</p>
 
-**Production:** [https://balaji-infra.vercel.app](https://balaji-infra.vercel.app)
 
-## Pages
+## Overview
 
-| Page | Path | Description |
-|------|------|-------------|
-| Home | `/index.html` | Hero, stats, capabilities, featured project |
-| About | `/about.html` | Company narrative, values, vision |
-| Services | `/services.html` | Roads, bridges, canals, buildings, pipelines |
-| Projects | `/projects.html` | Portfolio table and case studies |
-| Why Us | `/why-us.html` | Strategic advantages and partnership framework |
-| Contact | `/contact.html` | Project inquiry form and headquarters |
+Corporate website for Balaji Infra, a civil infrastructure contractor, with service pages and lead-focused presentation.
+
+This README is structured as a professional project handoff: it explains the purpose, stack, setup flow, and maintenance expectations so the repository is easier to evaluate, run, and extend.
+
+## Highlights
+
+- Clear implementation of the project goal: Corporate website for Balaji Infra, a civil infrastructure contractor, with service pages and lead-focused presentation.
+- Organized repository structure for maintainable iteration and future extension.
+- Built around HTML with pragmatic tooling choices.
+- Tagged for discoverability around corporate-website, css, html, infrastructure, vercel.
 
 ## Tech Stack
 
-- Static HTML5
-- [Tailwind CSS](https://tailwindcss.com/) (CDN)
-- Vanilla JavaScript (shared nav, footer, mobile menu, forms)
-- Google Fonts: Montserrat + Inter
-- Material Symbols icons
+- HTML
 
-## Design System
+<p>
+  <img src="https://img.shields.io/badge/HTML-111827?style=flat" alt="HTML" />
+</p>
 
-Brand tokens and guidelines are documented in [`DESIGN.md`](./DESIGN.md) — Institutional Excellence theme with navy primary, steel grey secondary, and amber accent.
+## Getting Started
 
-## Local Development
+### Prerequisites
 
-No build step required. Serve the project root with any static file server:
+- Git
+- A runtime appropriate for the stack listed above
+
+### Installation
 
 ```bash
-npx serve . -l 8080
+git clone https://github.com/RaghavSobti37/balaji-infra.git
+cd balaji-infra
+No install required.
 ```
 
-Then open [http://localhost:8080](http://localhost:8080).
+### Development
+
+```bash
+Open index.html in a browser or serve the folder locally.
+```
 
 ## Project Structure
 
-```
-├── index.html
-├── about.html
-├── services.html
-├── projects.html
-├── why-us.html
-├── contact.html
-├── DESIGN.md
-├── assets/
-│   ├── css/site.css
-│   └── js/
-│       ├── site.js
-│       └── tailwind-theme.js
-└── README.md
-```
+The repository is organized around the source code, configuration, and project assets needed to run or extend the application. Start with the main entry point and configuration files, then follow the feature or module directories from there.
 
-## Contact
+## Quality Notes
 
-- **Head Office:** Nashik, Maharashtra, India 422001
-- **Email:** Kishorbhamare319@gmail.com
-- **Phone:** +91 9420593051
+- Keep implementation changes small, reviewed, and easy to reason about.
+- Document new environment variables, scripts, and external services as they are added.
+- Prefer clear naming and predictable structure over clever abstractions.
+- Validate user-facing flows after any dependency, routing, or deployment change.
 
-## License
+## Topics
 
-© 2026 Kishor Bhamare. All Rights Reserved.
+- corporate-website
+- css
+- html
+- infrastructure
+- vercel
+
+## Author
+
+Built and maintained by [Raghav Raj Sobti](https://github.com/RaghavSobti37).
+
+Project link: [https://balaji-infra.vercel.app](https://balaji-infra.vercel.app)
+
